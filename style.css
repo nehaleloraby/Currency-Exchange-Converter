@@ -1,0 +1,107 @@
+/* Targeting all elements of the page */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    border: #02002c;
+  }
+
+  body {
+    background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80");
+    background-size: cover;
+  }
+
+  .group {
+    width: 100%;
+    max-width: 50em;
+    background-color: rgb(102, 141, 182, 0.5);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 2em;
+    border-radius: 0.8em;
+  }
+  .app-display {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .app-icon {
+    width: 12em;
+    margin-bottom: 2em;
+  }
+  .app-title {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    color: white;
+  }
+  input#amount {
+    font-weight: 400;
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #02002c;
+    color: rgb(114, 124, 149);
+    margin-bottom: 2em;
+    padding: 0.5em;
+  }
+  input#amount:focus {
+    color: #7388fe;
+    border-color: #7388fe;
+  }
+  .dropdowns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  select {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("https://www.svgrepo.com/download/7882/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%, center;
+    background-size: 20px 20px;
+    background-color: #738afe;
+    color: #ffffff;
+  }
+  select option {
+    background-color: #ffffff;
+    color: #0f06ad;
+  }
+  button {
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 100%;
+    background-color: #4607f2;
+    color: #ffffff;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-radius: 0.3em;
+    cursor: pointer; 
+  }
+  button:hover {
+    background-color: rgb(255, 0, 183);
+  }
+  #result {
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 1em;
+    color: #0f06ad;
+    background-color: #a9b3eb;
+    padding: 0.8em 0;
+  }

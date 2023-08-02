@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+ 
+    
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="group">
+      <div class="app-display">
+        <img src="https://cdn-icons-png.flaticon.com/256/10384/10384161.png" alt="An image of money" class="app-icon" />
+         
+        <!-- Animation -->
+        <style>
+            @keyframes money {
+              0%   {transform: scale(1); opacity: 1;}
+              50%  {transform: scale(1.1); opacity: 0.5;}
+              100% {transform: scale(1); opacity: 1;}
+            }
+            
+            img {
+              animation-name: money;
+              animation-duration: 2s;
+              animation-iteration-count: infinite;
+            }
+            </style> 
+
+        <h1 class="app-title">Currency Exchange</h1>
+
+      </div>
+
+      <label for="amount">Enter Amount:</label>
+      <input type="number" id="amount" value="1" />
+
+      <div class="dropdowns">
+        <select id="from-currency-select"></select>
+        <select id="to-currency-select"></select>
+      </div>
+
+      <button id="convert-button">Get Exchange Rate</button>
+      <p id="result"></p>
+
+    </div>
+
+    
+    <script src="country-codes.js"></script>
+  
+    
+    <script src="app.js"></script>
+
+  </body>
+</html>
