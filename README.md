@@ -1,7 +1,7 @@
 Project: Currency Exchange
 This project is a currency exchange web application using HTML, CSS and vanilla JavaScript. It allows the user to convert values between different curriencies using exchange rates from an API. 
 
-Link to web application: 
+Link to web application: https://magical-lily-4f6799.netlify.app/
 API used:  https://www.exchangerate-api.com/
 
 Technologies used:
